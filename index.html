@@ -1,15 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculator.css">
+    
+    <style>
+        
+    </style>
     <title>Calculator</title>
 </head>
+
 <body>
-    <input type="text" id="valueOne" />
-    <input type="text" id="valueTwo" />
-    <input type="text" id="result" />
-    <button onclick="process()">Add</button>
-    <script src="index1.js"></script>
+    <div class="container">
+        <div class='title'>
+            <img class='calc-img' src="calculator-icon.jpg" alt="">
+            <p class='name'>Calculator</p>
+        </div>
+
+        <div class='menu'>
+            <div class="first">View</div>
+            <div>Edit</div>
+            <div>Help</div>
+        </div>
+        <div class="pannel">
+            <div class="output">
+                <div id='output' class='output-text'>0</div>
+            </div>
+            <div id='buttonGroup' class='buttons-panel'>
+                <div action='m-control' value='mc' class="button control">MC</div>
+                <div action='m-control' value='mr' class="button control">MR</div>
+                <div action='m-control' value='ms' class="button control">MS</div>
+                <div action='m-control' value='m+' class="button control">M+</div>
+                <div action='m-control' value='m-' class="button control">M-</div>
+                <div action='e-control' value='bs' class="button control">&larr;</div>
+                <div action='e-control' value='ce' class="button control">CE</div>
+                <div action='e-control' value='c' class="button control">C</div>
+                <div action='s-operator' value='+-' class="button control">&#8723;</div>
+                <div action='s-operator' value='sqrt' class="button control">&#8730;</div>
+                <div action='number' value='7' class="button number">7</div>
+                <div action='number' value='8' class="button number">8</div>
+                <div action='number' value='9' class="button number">9</div>
+                <div action='d-operator' value='/' class="button control">&#8725;</div>
+                <div action='d-operator' value='%' class="button control">%</div>
+                <div action='number' value='4' class="button number">4</div>
+                <div action='number' value='5' class="button number">5</div>
+                <div action='number' value='6' class="button number">6</div>
+                <div action='d-operator' value='*' class="button control">&#8727;</div>
+                <div action='s-operator' value='1/x' class="button control">1/x</div>
+                <div action='number' value='1' class="button number">1</div>
+                <div action='number' value='2' class="button number">2</div>
+                <div action='number' value='3' class="button number">3</div>
+                <div action='d-operator' value='-' class="button control">-</div>
+                <div action='s-operator' value='=' class="button equal">=</div>
+                <div action='number' value='0' class="button zero number">0</div>
+                <div action='number' value='.' class="button control">&#8901;</div>
+                <div action='d-operator' value='+' class="button control">+</div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="calculator.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,136 @@
+.container {
+  position: relative;
+  width: 230px;
+  height: 322px;
+  border: 1px solid lightgray;
+  background-color: rgb(241, 240, 240);
+}
+
+.container:hover {
+  background-color: rgb(255, 254, 254);
+}
+
+.buttons-panel {
+  display: grid;
+  width: 190px;
+  height: 186px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 5px;
+  margin: 5px 12px 10px 12px;
+}
+
+.output {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 188px;
+  height: 48px;
+  border: 1px solid rgb(148, 155, 165);
+  border-radius: 2px;
+  margin-left: 12px;
+  margin-top: 10px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(215, 229, 241, 0.5) 100%);
+}
+
+.output-text {
+  font-family: monospace;
+  margin-right: 4px;
+  font-size: 24px;
+  line-height: 55px;
+}
+
+.button {
+  background-color: rgb(232, 239, 247);
+  border: 1px solid rgb(148, 155, 165);
+  border-radius: 2px;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  transition-property: background-color;
+  transition-duration: 1s;
+  cursor: default;
+}
+
+.button:hover {
+  background-color: yellow;
+}
+
+.number {
+  background-color: rgb(244, 249, 252);
+}
+
+.control {
+  font-size: 11px;
+}
+
+.equal {
+  grid-row: 5 / 7;
+  grid-column: 5/6;
+  font-size: 24px;
+  line-height: 52px;
+}
+
+.zero {
+  grid-row: 6 / 7;
+  grid-column: 1/3;
+}
+
+.pannel {
+  position: absolute;
+  top: 49px;
+  left: 7px;
+  width: 215px;
+  height: 265px;
+  border: 1px solid rgba(148, 155, 165, 0.2);
+  background: rgb(255, 255, 255);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(215, 229, 241, 0.9) 10%);
+}
+
+.menu {
+  display: flex;
+  position: absolute;
+  width: 215px;
+  left: 7px;
+  top: 29px;
+  gap: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 11.5px;
+  height: 19px;
+  line-height: 19px;
+  border: 1px solid lightgrey;
+  background-color: rgb(250, 250, 250);
+  cursor: default;
+  color: grey;
+}
+
+.first {
+  margin-left: 10px;
+}
+
+.title {
+  position: absolute;
+  top: 5px;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  color: rgb(78, 78, 78);
+}
+
+.calc-img {
+  padding-left: 10px;
+  margin: 0;
+  padding-left: 20p;
+  display: inline-block;
+}
+
+.name {
+  padding-left: 20px;
+  margin: 0;
+  padding-left: 20px;
+  display: inline-block;
+}
